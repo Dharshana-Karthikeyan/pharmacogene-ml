@@ -1,6 +1,6 @@
 """
 Pharmacogene Functional-Status Predictor
-Web app built with Streamlit — full redesign.
+Web app built with Streamlit
 """
 
 import io
@@ -76,7 +76,7 @@ st.markdown(f"""
         background-color: {C_LIGHTEST};
     }}
     .block-container {{
-        padding-top: 2rem;
+        padding-top: 4.5rem;
         padding-bottom: 2rem;
         max-width: 1100px;
     }}
@@ -262,10 +262,19 @@ st.markdown(f"""
         font-weight: 600;
     }}
 
-    /* Hide default Streamlit chrome */
+    /* Hide default Streamlit chrome — we deliberately leave the <header>
+       and its toolbar fully untouched, since the native "reopen sidebar"
+       arrow lives there and we want Streamlit's own working control,
+       not a reimplementation of it. Only the footer credit is hidden. */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
-    header {{visibility: hidden;}}
+
+    /* Match Streamlit's default header bar to the page background.
+       Only the color changes here — no visibility/display rules — so the
+       native sidebar arrow inside it keeps working. */
+    [data-testid="stHeader"] {{
+        background-color: {C_LIGHTEST};
+    }}
 
     /* Button */
     .stButton > button {{

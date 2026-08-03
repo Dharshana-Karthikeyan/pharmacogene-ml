@@ -1,0 +1,33 @@
+# Data directory — too large for GitHub
+scripts/data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary diagnostic scripts
+check_*.py
+debug_*.py
+diagnose_*.py
+test_*.py
+fix_*.py
+prepare_*.py
+
+# Old backup files
+*_OLD_BACKUP.py
+*_backup.py

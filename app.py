@@ -86,7 +86,7 @@ st.markdown(f"""
         border-radius: 12px;
         padding: 2.5rem 2.5rem 2rem 2.5rem;
         margin-bottom: 2rem;
-        color: white;
+        color: white !important;
     }}
     .pgx-header h1 {{
         font-family: 'Georgia', serif;

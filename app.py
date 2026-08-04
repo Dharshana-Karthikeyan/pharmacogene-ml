@@ -115,9 +115,6 @@ st.markdown(f"""
         color: white;
     }}
 
-    /* Native bordered containers used for the step cards —
-       replaces the old broken "open-div / close-div" markdown hack
-       that was rendering as empty white boxes. */
     div[data-testid="stVerticalBlockBorderWrapper"] {{
         background: white;
         border-radius: 10px;
@@ -208,7 +205,7 @@ st.markdown(f"""
         font-family: monospace;
     }}
 
-    /* Warning banner (kept amber — semantic caution color) */
+    /* Warning banner */
     .pgx-warning {{
         background: #FFF8E7;
         border-left: 4px solid #F39C12;
@@ -261,16 +258,9 @@ st.markdown(f"""
         font-weight: 600;
     }}
 
-    /* Hide default Streamlit chrome — we deliberately leave the <header>
-       and its toolbar fully untouched, since the native "reopen sidebar"
-       arrow lives there and we want Streamlit's own working control,
-       not a reimplementation of it. Only the footer credit is hidden. */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
-    /* Match Streamlit's default header bar to the page background.
-       Only the color changes here — no visibility/display rules — so the
-       native sidebar arrow inside it keeps working. */
     [data-testid="stHeader"] {{
         background-color: {C_LIGHTEST};
     }}
@@ -308,24 +298,24 @@ st.markdown(f"""
     }}
     /* Force light-mode readability for plain markdown text and tables,
        regardless of the visitor's device/browser dark-mode setting. */
-    :root {
+    :root {{
         color-scheme: light;
-    }
-    .stMarkdown, .stMarkdown p, .stMarkdown li, .stMarkdown span {
+    }}
+    .stMarkdown, .stMarkdown p, .stMarkdown li, .stMarkdown span {{
         color: #333333;
-    }
-    .stMarkdown table {
+    }}
+    .stMarkdown table {{
         background-color: white !important;
         border: 1px solid #B2D4CC !important;
-    }
-    .stMarkdown table th {
+    }}
+    .stMarkdown table th {{
         background-color: #E8F4F1 !important;
         color: #0D4438 !important;
-    }
-    .stMarkdown table td {
+    }}
+    .stMarkdown table td {{
         background-color: white !important;
         color: #333333 !important;
-    }
+    }}
 </style>
 """, unsafe_allow_html=True)
 

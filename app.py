@@ -94,14 +94,14 @@ st.markdown(f"""
         font-weight: 700;
         margin: 0 0 0.4rem 0;
         letter-spacing: -0.5px;
-        color: white;
+        color: white !important;
     }}
     .pgx-header p {{
         font-size: 1rem;
         opacity: 0.88;
         margin: 0;
         line-height: 1.6;
-        color: white;
+        color: white !important;
     }}
     .pgx-badge {{
         display: inline-block;
@@ -112,7 +112,7 @@ st.markdown(f"""
         font-size: 0.78rem;
         margin-top: 1rem;
         letter-spacing: 0.3px;
-        color: white;
+        color: white !important;
     }}
 
     div[data-testid="stVerticalBlockBorderWrapper"] {{

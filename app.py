@@ -91,9 +91,10 @@ st.markdown(f"""
         font-family: 'Georgia', serif !important;
         font-size: 2rem !important;
         font-weight: 700 !important;
-        margin: 0 0 0.4rem 0;
-        letter-spacing: -0.5px;
+        margin: 0 0 0.4rem 0 !important;
+        letter-spacing: -0.5px !important;
         color: white !important;
+        line-height: 1.3 !important;
     }}
     .stMarkdown .pgx-header p {{
         font-size: 1rem;
@@ -103,14 +104,14 @@ st.markdown(f"""
         color: white !important;
     }}
     .stMarkdown .pgx-header .pgx-badge {{
-        display: inline-block;
-        background: rgba(255,255,255,0.15);
-        border: 1px solid rgba(255,255,255,0.3);
-        border-radius: 20px;
-        padding: 3px 12px;
-        font-size: 0.78rem;
-        margin-top: 1rem;
-        letter-spacing: 0.3px;
+        display: inline-block !important;
+        background: rgba(255,255,255,0.15) !important;
+        border: 1px solid rgba(255,255,255,0.3) !important;
+        border-radius: 20px !important;
+        padding: 3px 12px !important;
+        font-size: 0.78rem !important;
+        margin-top: 1rem !important;
+        letter-spacing: 0.3px !important;
         color: white !important;
     }}
 

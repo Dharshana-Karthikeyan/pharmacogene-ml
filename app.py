@@ -86,7 +86,7 @@ st.markdown(f"""
         border-radius: 12px;
         padding: 2.5rem 2.5rem 2rem 2.5rem;
         margin-bottom: 2rem;
-        color: white !important;
+        color: #E8F4F1 !important;
     }}
     .pgx-header [data-testid="stHeadingWithActionElements"] h1 {{
         color: white !important;

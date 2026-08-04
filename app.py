@@ -481,6 +481,8 @@ with st.sidebar:
         st.markdown(f"`{g}`")
     st.markdown("---")
     st.markdown("[GitHub repository](https://github.com/Dharshana-Karthikeyan/pharmacogene-ml)")
+    st.markdown("Built by **Dharshana Karthikeyan**")
+    st.markdown("[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Dharshana-Karthikeyan/pharmacogene-ml/blob/main/LICENSE)")
     st.markdown("Research use only. Not for clinical decisions.")
 
 # ── Header ────────────────────────────────────────────────────────────────────

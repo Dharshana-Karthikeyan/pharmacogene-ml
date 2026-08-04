@@ -88,7 +88,7 @@ st.markdown(f"""
         margin-bottom: 2rem;
         color: white !important;
     }}
-    [class*="pgx-header"] h1 {{
+   .pgx-header [data-testid="stHeadingWithActionElements"] h1 {{
         color: white !important;
         font-family: 'Georgia', serif !important;
         font-size: 2rem !important;

@@ -306,6 +306,26 @@ st.markdown(f"""
         border-radius: 8px;
         overflow: hidden;
     }}
+    /* Force light-mode readability for plain markdown text and tables,
+       regardless of the visitor's device/browser dark-mode setting. */
+    :root {
+        color-scheme: light;
+    }
+    .stMarkdown, .stMarkdown p, .stMarkdown li, .stMarkdown span {
+        color: #333333;
+    }
+    .stMarkdown table {
+        background-color: white !important;
+        border: 1px solid #B2D4CC !important;
+    }
+    .stMarkdown table th {
+        background-color: #E8F4F1 !important;
+        color: #0D4438 !important;
+    }
+    .stMarkdown table td {
+        background-color: white !important;
+        color: #333333 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 

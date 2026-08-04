@@ -80,14 +80,15 @@ st.markdown(f"""
         max-width: 1100px;
     }}
 
-    /* Header banner */
+ /* Header banner */
     .pgx-header {{
         background: linear-gradient(135deg, {C_DARK} 0%, {C_DARKEST} 100%);
         border-radius: 12px;
         padding: 2.5rem 2.5rem 2rem 2.5rem;
         margin-bottom: 2rem;
         color: white !important;
-   .stMarkdown .pgx-header h1 {{
+    }}
+    .stMarkdown .pgx-header h1 {{
         font-family: 'Georgia', serif !important;
         font-size: 2rem !important;
         font-weight: 700 !important;
@@ -97,22 +98,27 @@ st.markdown(f"""
         line-height: 1.3 !important;
     }}
     .stMarkdown .pgx-header p {{
-        font-size: 1rem;
-        opacity: 0.88;
-        margin: 0;
-        line-height: 1.6;
+        font-size: 1rem !important;
+        opacity: 0.88 !important;
+        margin: 0 !important;
+        line-height: 1.6 !important;
         color: white !important;
     }}
-    .stMarkdown .pgx-header .pgx-badge {{
+   .stMarkdown .pgx-header .pgx-badge {{
         display: inline-block !important;
         background: rgba(255,255,255,0.15) !important;
-        border: 1px solid rgba(255,255,255,0.3) !important;
+        border: 2px solid rgba(255,255,255,0.5) !important;
         border-radius: 20px !important;
-        padding: 3px 12px !important;
+        padding: 4px 14px !important;
         font-size: 0.78rem !important;
         margin-top: 1rem !important;
         letter-spacing: 0.3px !important;
         color: white !important;
+        line-height: 1.6 !important;
+    }}
+    .stMarkdown .pgx-header span.pgx-badge {{
+        color: white !important;
+        display: inline-block !important;
     }}
 
     div[data-testid="stVerticalBlockBorderWrapper"] {{
@@ -206,14 +212,18 @@ st.markdown(f"""
     }}
 
     /* Warning banner */
-    .pgx-warning {{
-        background: #FFF8E7;
-        border-left: 4px solid #F39C12;
-        border-radius: 0 8px 8px 0;
-        padding: 0.7rem 1rem;
-        font-size: 0.83rem;
-        color: #7D5A00;
-        margin-bottom: 1rem;
+    .stMarkdown .pgx-warning {{
+        background: #FFF8E7 !important;
+        border-left: 4px solid #F39C12 !important;
+        border-radius: 0 8px 8px 0 !important;
+        padding: 0.7rem 1rem !important;
+        font-size: 0.83rem !important;
+        color: #7D5A00 !important;
+        margin-bottom: 1rem !important;
+    }}
+    .stMarkdown .pgx-warning p {{
+        color: #7D5A00 !important;
+        margin: 0 !important;
     }}
 
     /* Summary metrics */

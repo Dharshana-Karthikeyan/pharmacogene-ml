@@ -80,15 +80,12 @@ st.markdown(f"""
         max-width: 1100px;
     }}
 
- /* Header banner */
+/* Header banner */
     .pgx-header {{
         background: linear-gradient(135deg, {C_DARK} 0%, {C_DARKEST} 100%);
         border-radius: 12px;
         padding: 2.5rem 2.5rem 2rem 2.5rem;
         margin-bottom: 2rem;
-        color: white !important;
-    }}
-    .stMarkdown .pgx-header h1 {{
         color: white !important;
     }}
     .stMarkdown .pgx-header h1 {{

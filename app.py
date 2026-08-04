@@ -407,8 +407,8 @@ def shap_bar_chart(model_data, X_proc):
               .replace("num__", "") for i in top_idx]
 
     fig, ax = plt.subplots(figsize=(7, 3.5))
-    fig.patch.set_facecolor(C_LIGHTEST)
-    ax.set_facecolor(C_LIGHTEST)
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
     colors = [C_DARKEST, C_MID, C_DARK]
     bottom = np.zeros(len(top_idx))
     for i, cls in enumerate(class_names):
@@ -423,7 +423,7 @@ def shap_bar_chart(model_data, X_proc):
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
     ax.tick_params(left=False)
-    ax.legend(loc="lower right", fontsize=8, framealpha=0.6)
+    ax.legend(loc="upper right", fontsize=8, framealpha=0.8)
     plt.tight_layout()
     return fig
 

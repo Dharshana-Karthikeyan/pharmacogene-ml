@@ -181,7 +181,31 @@ st.markdown(f"""
         text-align: right;
         font-variant-numeric: tabular-nums;
     }}
-
+@media (max-width: 600px) {{
+        .result-row {{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }}
+        .result-gene {{
+            min-width: unset;
+        }}
+        .result-name {{
+            font-size: 0.75rem;
+            word-break: break-all;
+        }}
+        .result-class {{
+            min-width: unset;
+            width: 100%;
+        }}
+        .result-conf {{
+            text-align: left;
+            min-width: unset;
+        }}
+        .conf-bar-wrap {{
+            width: 100%;
+        }}
+    }}
     /* Confidence bar */
     .conf-bar-wrap {{
         background: {C_LIGHTEST};

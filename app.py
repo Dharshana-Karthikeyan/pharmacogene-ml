@@ -88,6 +88,14 @@ st.markdown(f"""
         margin-bottom: 2rem;
         color: white !important;
     }}
+    [class*="pgx-header"] h1 {{
+        color: white !important;
+        font-family: 'Georgia', serif !important;
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.5px !important;
+        line-height: 1.3 !important;
+    }}
     div.pgx-header h1 {{
         color: white !important;
     }}

@@ -512,12 +512,14 @@ with st.container(border=True):
     st.markdown(f"""
     <div style="background:#FFF8E7;border-left:4px solid #F39C12;border-radius:0 8px 8px 0;
          padding:0.6rem 1rem;font-size:0.82rem;color:#7D5A00;margin-bottom:0.8rem;">
-        📱 <strong>On mobile?</strong> This app is best experienced on a laptop or desktop.
+         <strong>On mobile?</strong> This app is best experienced on a laptop or desktop.
         If you're on a phone and just want to try it out, use the <strong>Load example data</strong> button below; no file upload needed.
     </div>
     """, unsafe_allow_html=True)
 
-    use_example = st.button("Load example data (mobile-friendly trial)")
+    if st.button("Load example data (mobile-friendly trial)"):
+        st.session_state["use_example"] = True
+    use_example = st.session_state.get("use_example", False)
 
     uploaded = st.file_uploader(
         "Select a CSV file",
@@ -533,6 +535,7 @@ with st.container(border=True):
             st.dataframe(df.head(10), use_container_width=True)
 
     elif uploaded is not None:
+        st.session_state["use_example"] = False
         try:
             df = pd.read_csv(uploaded)
             st.markdown(f"**{len(df)} variants loaded** from `{uploaded.name}`")

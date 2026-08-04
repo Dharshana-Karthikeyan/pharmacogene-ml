@@ -89,6 +89,9 @@ st.markdown(f"""
         color: white !important;
     }}
     .stMarkdown .pgx-header h1 {{
+        color: white !important;
+    }}
+    .stMarkdown .pgx-header h1 {{
         font-family: 'Georgia', serif !important;
         font-size: 2rem !important;
         font-weight: 700 !important;

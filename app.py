@@ -27,8 +27,7 @@ NM_000367.2(TPMT):c.238G>C (p.Ala80Pro),TPMT,missense_variant,MODERATE,0.0002,2.
 NM_000777.5(CYP3A5):c.1400C>T,CYP3A5,missense_variant,MODERATE,0.15,1.2,3.4
 """
 
-# Semantic status colors — kept distinct from the brand palette on purpose,
-# since red/orange/green carry clinical meaning (no function / decreased / normal).
+
 CLASS_INFO = {
     "No function": {
         "color": "#C0392B",
